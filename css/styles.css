@@ -389,6 +389,9 @@ h2 {
 /* NOTE: contact */
 #contact{
   height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
