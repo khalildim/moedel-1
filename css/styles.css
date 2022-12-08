@@ -1,0 +1,426 @@
+body {
+  background-color: #ffff;
+  overflow: overlay;
+}
+
+/* NOTE: top page */
+.brand {
+  width: 10rem;
+  position: relative;
+  top: -8px;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.brand:hover {
+  transform: scale(1.1);
+}
+
+/* NOTE: list button */
+.toggle_button {
+  width: 30px;
+  height: 23px;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: fit-content;
+  float: right;
+}
+
+.ul {
+  height: fit-content;
+  background-color: #7FE9DE;
+  border-radius: 10px;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  top: 3rem;
+  right: -1rem;
+  /* box-shadow:2px 2px 5px #75d7cd;  */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  animation-name: none;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+@keyframes ultrans {
+  0% {
+    top: 4rem;
+    opacity: 0%
+  }
+
+  100% {
+    top: 5rem;
+    opacity: 100%
+  }
+}
+
+li {
+  margin: 8px;
+}
+
+#toggle_button {
+  display: none;
+}
+
+#toggle_button:checked~ul {
+  display: block;
+  animation-name: ultrans;
+}
+
+/* NOTE: button */
+.nine {
+  border: 2px solid;
+  width: 45px;
+  height: 45px;
+  scale: 1;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.ninetrans {
+  color: #7FE9DE;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.bar1 {
+  position: relative;
+  top: 0px;
+  border: 2px solid;
+  width: 30px;
+  margin: 5px auto;
+  transition: 0.5s;
+}
+
+.bar1trans {
+  position: relative;
+  border: 2px solid;
+  width: 30px;
+  margin: 5px auto;
+  top: 12.4px;
+  transform: rotate(45deg);
+  color: #7FE9DE;
+}
+
+.bar2 {
+  border: 2px solid;
+  width: 30px;
+  margin: 5px auto;
+  transition: 0.5s;
+}
+
+.bar2trans {
+  opacity: 0%;
+}
+
+.bar3 {
+  position: relative;
+  top: 0px;
+  border: 2px solid;
+  width: 30px;
+  margin: 5px auto;
+  transition: 0.5s;
+}
+
+.bar3trans {
+  position: relative;
+  top: -15px;
+  border: 2px solid;
+  width: 30px;
+  margin: 5px auto;
+  transform: rotate(-45deg);
+  color: #7FE9DE;
+}
+
+/* NOTE:  */
+#accueil {
+  overflow: hidden;
+  height: 50rem;
+}
+
+.bergeImg {
+  position: relative;
+  top: -350px;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: 'NTR', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 45%;
+  opacity: 0%;
+  animation-name: texttrans;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+@keyframes texttrans {
+  0% {
+    top: 50%;
+    opacity: 0%;
+  }
+
+  100% {
+    top: 45%;
+    opacity: 100%;
+  }
+}
+
+h6 {
+  opacity: 0%;
+  font-size: 1.2rem;
+  font-family: 'NTR', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 45%;
+  animation-name: texttrans;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-direction: normal;
+}
+
+.card {
+  border: none;
+  background-color: #ffffff00;
+}
+
+.row1 {
+  margin: 0;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  /* height: 15rem; */
+  background-color: #ecf1f0;
+  transition: 1s;
+}
+
+/* @media screen and (max-width: 575.5px) {
+  .row1 {
+    height: 622px;
+
+  }
+
+} */
+.fa-solid {
+  justify-content: center;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.cardIcon {
+  margin-bottom: 20px;
+  color: #6cc9bf;
+}
+
+.card-text {
+  font-size: 17px;
+  transition: 1s;
+}
+
+#services {
+  position: relative;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.serIcon {
+  margin-bottom: 20px;
+  color: #6cc9bf;
+  /* transition: 1s; */
+}
+
+.services {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 7rem;
+  color: #F5EDDC;
+  /* color: #1c29d44a; */
+  /* transition: 1s; */
+}
+
+@media screen and (max-width: 452px) {
+  .services {
+    font-size: 20vw;
+  }
+}
+
+.paraServic {
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+/* .col {
+  transition: 1s;
+} */
+@media screen and (max-width: 1450px) {
+  .colIMG {
+    display: none;
+  }
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -27px;
+  font-size: 15px;
+
+}
+
+h2 {
+  font-family: 'NTR', sans-serif;
+}
+
+/* NOTE: portfolio */
+#portfolio {
+  width: 100%;
+  background-color: #ecf1f0;
+}
+
+.portfolio {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 7rem;
+  color: #5beecd;
+  transition: 1s;
+}
+
+@media screen and (max-width: 590px) {
+  .portfolio {
+    font-size: 4.3rem;
+  }
+
+  .portparag {
+    font-size: 0.7rem;
+    position: relative;
+    top: -26px !important;
+  }
+}
+
+.portparag {
+  display: flex;
+  justify-content: center;
+  top: -39px;
+  position: relative;
+  transition: 1s;
+}
+
+.portImg {
+  /* max-width: 26.25rem; */
+  width: 100%;
+  max-height: 26.25rem;
+  /* padding: 10px; */
+  margin-bottom: 20px;
+}
+
+.portlink {
+  width: fit-content;
+  margin: auto;
+}
+
+.portcard {
+  border-radius: 10px !important;
+   background-color: white;
+  /* margin: 0 30px; */
+  overflow: hidden;
+}
+
+@keyframes cardtrans {
+  0% {
+    opacity: 0%;
+    transform: translate(0, 20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}
+
+.portcol {
+  max-width: 25rem;
+  opacity: 0%;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.card-text {
+  height: 6.5rem;
+  overflow: auto;
+}
+
+
+/* NOTE: contact */
+#contact{
+  height: 20rem;
+}
+
+
+
+
+/* NOTE: footer */
+#footer{
+  background-color:#ecf1f0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+/* .portcol{
+  border: 1px solid;
+  max-width: 26.25rem;
+  height: 40.6rem;
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #7FE9DE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}

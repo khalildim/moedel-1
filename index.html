@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Paytone+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center  ">
+      <a href="/" class="d-flex align-items-center mt-3 mb-0 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img class="brand" src="images/Brand.png" alt="Brand image">
+      </a>
+
+
+
+      <div class="container1">
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button nine">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <!-- <div class="list_items"> -->
+
+        <ul class="ul" style="position: absolute ;  right: auto;top: 5rem;">
+          <li><a href="#services">Action</a></li>
+          <li><a href="#portfolio">Another action</a></li>
+          <li><a href="#contact">Something else here</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <section id="accueil">
+    <h1 class="hello">hello there</h1>
+    <h6>i'm Khalil i'm a web creator <br>i hope you like my website </h6>
+    <img class="bergeImg" src="images/Berge.jpg" alt="">
+
+  </section>
+
+  <div class="row row1 ">
+    <div class=" col-lg-4 col-sm-6">
+      <div class="card ">
+        <div class="card-body align-self-center ">
+          <i class="fa-solid fa-wand-magic-sparkles fa-3x cardIcon" style="display:flex;"></i>
+          <p class="card-text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="card">
+        <div class="card-body align-self-center">
+          <i class="fa-solid fa-microchip fa-3x cardIcon" style="display:flex;"></i>
+          <p class="card-text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-4 col-sm-6">
+      <div class="card">
+        <div class="card-body align-self-center">
+          <i class="fa-solid fa-earth-africa fa-3x cardIcon" style="display:flex;"></i>
+          <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <!-- <button id="purpel" type=" button" name="button" style="position: absolute; right: 80px;">purpel</button>
+    <button id="beige" type=" button" name="button" style="position: absolute; right: 20px;">beige</button> -->
+    <div class="container text-center">
+      <h1 class="services">Services</h1>
+      <h5>Don't get distracted by what's around you, focus on your goal</h5>
+
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 row-cols-md-3 row2">
+        <div class="col"> <i class="fa-regular fa-object-ungroup fa-3x serIcon"></i>
+          <h2>Web Design</h2>
+          <p class="paraServic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+
+        <div class="col"> <i class="fa-solid fa-code fa-3x serIcon"></i>
+          <h2>Web Development</h2>
+          <p class="paraServic">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. </p>
+        </div>
+
+        <div class="col colIMG">
+          <img class="servicesIMG" src="images/services1.png" alt="" style="width:600px; position: absolute; right: 0px; ">
+        </div>
+
+        <div class="col"><i class="fa-solid fa-database fa-3x serIcon"></i>
+          <h2>Database</h2>
+          <p class="paraServic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+
+        <div class="col"><i class="fa-solid fa-server fa-3x serIcon"></i>
+          <h2>Back-end</h2>
+          <p class="paraServic">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+
+    <div class="col-lg-12 col-md-12 col-sm-12  mb-5">
+
+      <h1 class="portfolio">Portfolio</h1>
+      <!-- <p class="portparag">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p> -->
+      <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h5>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4" style="justify-content: center; width:100%; margin:0; position: relative;top: -2rem;">
+      <div class="col portcol" >
+        <div class="card  portcard  ">
+          <a class="portlink" href="https://khalildim.github.io/test2/" target="_blank"> <img class="portImg" src="images/first.png" alt=""> </a>
+          <div class="card-body">
+            <h5 class="card-title">Portfolio</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col portcol" >
+        <div class="card  portcard ">
+          <a class="portlink" href="https://khalildim.github.io/piano/" target="_blank"> <img class="portImg" src="images/piano.png" alt=""> </a>
+          <div class="card-body">
+            <h5 class="card-title">Piano</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col portcol" >
+        <div class="card  portcard ">
+          <a class="portlink" href="https://khalildim.github.io/Tindog/" target="_blank"> <img class="portImg" src="images/tindog.png" alt="" style="margin-bottom : 2.62rem;"> </a>
+          <div class="card-body">
+            <h5 class="card-title">Tindog</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container text-center">
+    <h1 class="services">Contact</h1>
+    <h5>This card has supporting text below as a natural lead-in to additional content.</h5>
+    <h2 class="contacttext" style="font-weight : 600; font-size: 2.3rem; color: rgb(0 224 179);">We are pleased to provide your feedback </h2>
+    <a href="mailto: khalildimassi09@gmail.com"><h2>khalildimassi09@gmail.com</a>
+  </div>
+  </section>
+
+  <footer  id="footer">
+    <div >
+      © 2021 <span>Dimassi </span> all Right reserved
+    </div>
+
+  </footer>
+
+  <script src="https://kit.fontawesome.com/d2116abe83.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 row-cols-md-3 row2 mx-auto" style="width:100%;">
+
+
+  <div class="col col-lg-4 col-sm-12  portcol">
+
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+  </div>
+  <div class="col col-lg-4 col-sm-12 portcol">
+
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+  </div>
+  <div class="col col-lg-4 col-sm-12 portcol">
+
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div class="card-group row-md-2">
+  <div class="card border">
+    <a class="portlink" href="#"> <img class="portImg" src="images/first.png" alt=""> </a>
+    <div class="card-body">
+      <h5 class="card-title">Portfolio</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+    </div>
+  </div>
+  <div class="card border">
+    <a class="portlink" href="#"> <img class="portImg" src="images/piano.png" alt=""> </a>
+    <div class="card-body">
+      <h5 class="card-title">Piano</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+    </div>
+  </div>
+  <div class="card border">
+    <a class="portlink" href="#"> <img class="portImg" src="images/tindog.png" alt=""> </a>
+    <div class="card-body">
+      <h5 class="card-title">Tindog</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+    </div>
+  </div>
+</div> -->
